@@ -1,0 +1,43 @@
+.original-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #00be80;
+  font-size: 30px;
+  border-radius: 12px;
+  width: 250px;
+  height: 70px;
+  border-bottom: 2.5px solid #00be80;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.original-button::before {
+  content: "QR";
+  display: block;
+  font-size: 16px;
+  width: 180px;
+  text-align: center;
+  background-color: #00BE80;
+  color: #fff;
+  padding: 10px 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-38%, 00px) rotate(-35deg);
+  transition: .5s;
+}
+
+.original-button:hover {
+  color: #fff;
+  background-color: #00BE80;
+}
+
+.original-button:hover::before {
+  background-color: #fff;
+  color: #00BE80;
+}
